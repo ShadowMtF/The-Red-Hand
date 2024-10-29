@@ -2,20 +2,22 @@
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #1a1a1a;
+    background-color: #222; /* Dunklerer Hintergrund für bessere Lesbarkeit */
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background-color: #990000;
+    background-color: #990000; /* Dunkelroter Header */
     text-align: center;
     padding: 50px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für Tiefe */
 }
 
 header h1 {
     font-size: 3em;
+    margin: 0; /* Entferne den Standard-Margin */
 }
 
 header p {
@@ -26,20 +28,62 @@ header p {
 section {
     padding: 20px;
     margin: 20px;
-    border: 2px solid #990000;
+    background-color: #333; /* Dunklerer Hintergrund für die Sektionen */
+    border: 2px solid #990000; /* Dunkelroter Rand */
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für Tiefe */
 }
 
+/* Titel der Sektionen */
 h2 {
-    color: #ff4d4d;
+    color: #ff4d4d; /* Helle Überschrift für den Abschnitt */
+    border-bottom: 2px solid #ff4d4d; /* Unterstrich unter der Überschrift */
+    padding-bottom: 10px; /* Abstand unter der Überschrift */
+}
+
+/* Listen */
+ul {
+    list-style-type: none; /* Entferne Aufzählungszeichen */
+    padding: 0; /* Entferne Padding */
+}
+
+li {
+    padding: 5px 0; /* Abstand zwischen den Listenelementen */
 }
 
 /* Links */
 a {
-    color: #ff4d4d;
+    color: #ff4d4d; /* Helle Links */
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Unterstreichen bei Hover */
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #990000; /* Dunkelroter Footer */
+    position: relative; /* Damit der Footer am unteren Rand bleibt */
+    bottom: 0; /* Fester Platz am unteren Rand */
+    width: 100%; /* Volle Breite */
+    margin-top: 20px; /* Abstand zum Hauptinhalt */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em; /* Kleinere Schrift für Mobilgeräte */
+    }
+
+    header p {
+        font-size: 1.2em; /* Kleinere Schrift für Mobilgeräte */
+    }
+
+    section {
+        margin: 10px; /* Weniger Margin für Mobilgeräte */
+    }
+}
+
